@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(173, 218, 218);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 25px;
+            color: brown;
+        }
+        
+        body{
+            background-color: rgb(184, 199, 194);
+        }
+        </style>
+</head>
+
+<body>
+
+       
+    <h1>Jokenpô - click na opção para jogar</h1>
+
+    <h2>PLACAR:</h2>
+    
+
+    <div id = "jogador">
+        <h2 id ="jogador-nome">Jogador</h2>
+        <span id = "jogador-pontos">0</span>
+    </div>
+
+    <div id = "computador">
+        <h2 id ="computador-nome">Computador</h2>
+        <span id = "computador-pontos">0</span>
+    </div>
+
+    <hr>
+
+    <h3>Jogador</h3>
+    <img src="pedra.jpeg" height="60px" width="60px" alt="pedra">
+    <img src="papel.jpeg" height="60px" width="60px" alt="papel">
+    <img src="tesoura.jpeg" height="60px" width="60px" alt="tesoura">
+    <form name="frmJokenpo">
+        <input type="radio" name="conjunto" id="pedra">pedra</input>
+        <input type="radio" name="conjunto" id="papel">papel</input>
+        <input type="radio" name="conjunto" id="tesoura">tesoura</input>
+        
+        <p>
+        <input type="button" value="JOGAR" onclick="jogar()">
+        <input type="reset" value="RESET" onclick="resetar()">
+        </p>
+    </form>
+    <hr>
+    <h3>Computador</h3>
+    <img src="computador.jpg" height="120px" width="120px" alt="PC" id="pc">
+    <hr>
+    
+    <h3 id = "placar"></h3>
+
+    <script src="jokenpo.js">  
+    </script>
+    
+</body>
+</html>
